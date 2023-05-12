@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+@media print {
+    html, body {
+       display: none;  /* hide whole page */
+    }
+}
+
+</style>
+</head>
+<body oncontextmenu="return false">
+
+<div class="gallery">
+  <!-- <a target="_blank" href="img/sameen_1.jpg"> -->
+    <img src="img/sameen_1.jpg" alt="Sameen Irfan" style=" width: 100%;">
+  <!-- </a> -->
+
+</div>
+<script>
+$( document ).ready(function() {
+    document.oncontextmenu = function() {
+    return false;
+}
+});
+</script>
+
+
+</body>
+</html>
+
+
