@@ -44,6 +44,11 @@ $( document ).ready(function() {
     return false;
 }
 });
+document.addEventListener("keydown", function(e) {
+  if (e.keyCode == 44) { // 44 is the key code for the "Print Screen" key
+    e.preventDefault();
+  }
+});
 </script>
 
 
